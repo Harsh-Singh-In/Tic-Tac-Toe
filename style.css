@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee Spice', cursive;
+    overflow: hidden;
+    
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+   background-image: url(Assets/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+
+.game-info {
+    color: rgb(8, 8, 8);
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem 0rem 1rem 0rem;
+    padding:0.5rem 3rem ;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+
+}
+
+.tic-tac-toe {
+    width: 18rem;
+    height:18rem;
+    border-radius: 1rem ;
+    display: grid;
+    padding: 1rem;
+    margin-top: 3rem;
+    grid-template-columns: repeat(3,1fr);
+    border:2rem solid rgba(240,180,135,1);
+    background: rgba(40,40,40,1)
+    -webkit-radial-gradient(center, rgba(40,80,60,1), rgba(0,20,20,.6));
+    background: rgba(40,40,40,1)
+    -moz-radial-gradient(center, rgba(40,80,60,1), rgba(0,20,20,.6));
+    background: rgba(40,40,40,1)
+    -ms-radial-gradient(center, rgba(40,80,60,1), rgba(0,20,20,.6));
+    background: rgba(40,40,40,1)
+    radial-gradient(center, rgba(40,80,60,1), rgba(0,20,20,.6));
+    background-size: cover;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-family: "Architects Daughter", "Helvetica", "sans-serif";
+    font-size: 2.8rem;
+    color: rgba(220,220,220,.7);
+
+}
+
+.box1, .box2, .box4, .box5 {
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.box3, .box6 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.box7, .box8 {
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn {
+    color: white;
+    width: 6rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.247);
+    font-family: 'Lato', sans-serif;
+    opacity: .7;
+    display: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.win {
+    background-color: rgb(0, 255, 0,0.3);
+}
+
+
+.img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    top: 4rem;
+}
+
+img {
+    height: 0rem;
+    padding: 0;
+    margin: 0;
+    transition: 1s ease-in-out;
+    
+}
+
+.image {
+    height: 8rem;
+}
+
+footer  {
+    position: absolute;
+    bottom :.7rem;
+}
+
+footer a {
+    opacity: .5;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .5s ease-in;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+    opacity: .9;
+    font-size: 1.25rem;
+}
+
+@media (max-width:900px) {
+    .game-info {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 320px;
+    }
+
+    .btn {
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .image {
+        height: 7rem;
+        margin-bottom: 1rem;
+    }
+    
+}
