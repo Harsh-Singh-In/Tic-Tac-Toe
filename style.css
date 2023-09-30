@@ -39,7 +39,7 @@
     border-radius: 1rem ;
     display: grid;
     padding: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     grid-template-columns: repeat(3,1fr);
     border:2rem solid rgba(240,180,135,1);
     background: rgba(40,40,40,1)
@@ -131,8 +131,7 @@ img {
 }
 
 .image {
-    height: 4rem;
-    margin-bottom: 1.5rem;
+    height: 8rem;
 }
 
 footer  {
@@ -148,13 +147,13 @@ footer a {
     transition: .5s ease-in;
     font-family: 'Lato', sans-serif;
     
-}
+  }
 
 footer a:hover {
     text-decoration: underline;
     opacity: .9;
     font-size: 1.25rem;
-}
+  }
 
 @media (max-width:900px) {
     .game-info {
@@ -170,7 +169,10 @@ footer a:hover {
         height: 2.5rem;
         font-size: 1rem;
     }
+
     .image {
-        height:7rem;
-    }   
+        height: 9rem;
+        margin-bottom: 1rem;
+    }
+    
 }
