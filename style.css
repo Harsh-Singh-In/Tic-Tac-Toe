@@ -131,7 +131,8 @@ img {
 }
 
 .image {
-    height: 8rem;
+    height: 7rem;
+    margin-bottom: 1rem;
 }
 
 footer  {
@@ -169,10 +170,5 @@ footer a:hover {
         height: 2.5rem;
         font-size: 1rem;
     }
-
-    .image {
-        height: 7rem;
-        margin-bottom: 1rem;
-    }
-    
+   
 }
