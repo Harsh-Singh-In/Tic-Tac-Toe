@@ -1,7 +1,7 @@
 # Tic-Tac-Toe
 This is a basic Tic Tac Toe game built using HTML/CSS/JavaScript.
 
-#How to get started
+#How to get started :
 
     To make a move, the player will use the mouse single click to mark a space.
     In this version,there is no provision to undo the move.
