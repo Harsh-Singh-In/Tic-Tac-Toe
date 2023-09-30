@@ -39,7 +39,7 @@
     border-radius: 1rem ;
     display: grid;
     padding: 1rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     grid-template-columns: repeat(3,1fr);
     border:2rem solid rgba(240,180,135,1);
     background: rgba(40,40,40,1)
